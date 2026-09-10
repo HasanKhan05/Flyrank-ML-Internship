@@ -35,6 +35,38 @@ __pycache__/
 .venv/
 venv/
 .env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Local editor, operating-system, and transient files ------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# --- Local-only assistant and planning material ---------------------------
+# These files may be useful locally, but they are not part of the public
+# research deliverable.
+/AGENTS.md
+/CLAUDE.md
+/CODEX.md
+/GEMINI.md
+/.agents/
+/.claude/
+/.codex/
+/skills/
+/docs/intern-free-tooling-guide.md
+/work/capstone_design.md
+/work/capstone_implementation_plan.md
+/README_READY.md
 
 # Local isolated development worktrees
 .worktrees/

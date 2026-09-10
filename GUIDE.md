@@ -23,7 +23,6 @@ what you may edit, how the pieces connect, and where your own work goes.
 | `docs/data-dictionary.md` | All 44 columns: meaning, scale, gotchas | Keep open while you work |
 | `docs/ml-intern-dataset-and-lane-guide.md` | Data safety, the lanes, the capstone workflow | Read in Week 1–2 |
 | `docs/ml-core-foundation-framework.md` | The ML-as-a-system map behind the live sessions | Reference |
-| `docs/intern-free-tooling-guide.md` | The zero-budget tool stack | Reference |
 | `.github/workflows/smoke-test.yml` | CI: re-runs the whole pipeline and fails if any dataset CSV is committed | Keep it green |
 | `.github/workflows/personalize.yml` | Runs once right after you create your copy: points every Colab badge at YOUR repo | Automatic — nothing to do |
 | `requirements.txt` | pandas, numpy, scikit-learn, matplotlib, reportlab, duckdb, huggingface_hub | `pip install -r requirements.txt` |
@@ -114,20 +113,7 @@ copy's badges, the dialog comes pre-filled (repo, path, branch), so saving is on
 *File → Save a copy in Drive* so the session doesn't evaporate. Badges acting up? *File →
 Open notebook → GitHub tab* → your repo — see `SETUP.md`, Moment 1.
 
-## 6. Working with an AI assistant
-
-This repo ships its own **skill library** for AI coding assistants (Claude Code, Cursor, Codex,
-ChatGPT — any of them). Start every task by telling your assistant:
-
-> Read `skills/README.md`, then load the ONE skill this assignment names on its card.
-
-The router in `skills/README.md` maps every task to its skill. Load one skill at a time — never
-all of them (your assistant's memory is small, and stuffing it makes it worse, not better).
-Using a chat-only assistant in the browser? Open the skill file on GitHub and paste its content
-into your chat first. Repo-reading agents find the router automatically through `AGENTS.md` and
-`CLAUDE.md` at the repo root.
-
-## 7. FAQ — the questions everyone asks
+## 6. FAQ — the questions everyone asks
 
 **Git won't add my results / my CSV.**
 By design — see section 3. Generated artifacts regenerate; datasets never enter git. Your

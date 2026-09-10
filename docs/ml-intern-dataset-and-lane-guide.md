@@ -5,7 +5,6 @@ Status: your guide for the Applied Search Intelligence track.
 Read this together with:
 
 - `docs/ml-core-foundation-framework.md` (ships in this repo — a deep reference, not week-one reading)
-- `docs/intern-free-tooling-guide.md` (ships in this repo)
 - the week-by-week curriculum on your portal board
 - the data dictionary and manifest that ship inside the dataset release on Hugging Face
 

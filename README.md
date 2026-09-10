@@ -88,8 +88,7 @@ That runs the whole pipeline on the bundled sample and writes results to `output
 
 1. **`ml-core-foundation-framework.md`** — the first-principles map of ML as a whole system. The backbone of the live sessions.
 2. **`ml-intern-dataset-and-lane-guide.md`** — how to use the data safely, the capstone workflow, and the analysis "lanes" you can pick from.
-3. **`intern-free-tooling-guide.md`** — the zero-budget tool stack (Python, Colab, free AI assistants). You never need to pay for anything.
-4. **`data-dictionary.md`** — all 44 columns: meaning, scale, and gotchas. Keep it open while you work.
+3. **`data-dictionary.md`** — all 44 columns: meaning, scale, and gotchas. Keep it open while you work.
 
 ---
 
@@ -130,8 +129,7 @@ The `.gitignore` blocks datasets by default, and CI fails any commit that includ
 
 Weekly assignments, live events, and the capstone live on **your portal board** (your
 enrollment email has your access link). This repo is the shared technical foundation they all
-build on — and the `skills/` folder here is the instruction library for your AI assistant
-(start at [skills/README.md](skills/README.md)).
+build on.
 
 **First time with GitHub?** You need exactly four things (full walkthrough: [SETUP.md](SETUP.md)):
 1. A free account at github.com.
