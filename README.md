@@ -60,16 +60,14 @@ already pre-filled with your repo and the right path.
 Badges not opening *your* copy? Colab's built-in opener always works: **File → Open notebook
 → GitHub tab** → paste `github.com/you/your-repo` → pick the notebook.
 
-### Prefer local?
+### Reference Pipeline Architecture
 
-```bash
-git clone <this-repo-url>
-cd flyrank-ml-internship-starter
-pip install -r requirements.txt          # or: uv pip install -r requirements.txt
-python scripts/run_all.py
-```
-
-That runs the whole pipeline on the bundled sample and writes results to `outputs/`.
+The machine learning workflow is structured into five sequential engineering stages:
+- **Feature Vector Engineering (`01_prepare_features.py`):** Data sanitization, categorical encoding, feature vector construction, and label boundary definition.
+- **Baseline Heuristic Formulation (`02_baseline_score.py`):** Transparent rule-based heuristic scoring establishing an empirical benchmark baseline.
+- **Supervised Classifier Training (`03_train_model.py`):** Multi-model evaluation (Logistic Regression, Decision Trees, Random Forests) under client-holdout split protocols.
+- **Evaluation & Metric Ranking (`04_evaluate_and_export.py`):** Precision@50 calculation, priority queue generation, lift curve diagnostics, and Markdown reporting.
+- **Executive Synthesis (`05_build_pdf_report.py`):** Automated report compiling final model metrics and explainable recommendations.
 
 ---
 
